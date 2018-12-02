@@ -1,0 +1,8 @@
+@media screen and (device-width: 570px) {
+    .menu-btn{
+      display: none;
+    }
+    .nav{
+      display: flex;
+    }
+   }
