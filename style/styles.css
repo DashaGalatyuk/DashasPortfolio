@@ -33,7 +33,7 @@ body{
 }
 
 .navigation{
-  height: 100px;
+  height: 130px;
   background-color:rgb(100%, 100%, 100%, .4);
   display: flex;
   justify-content: space-between;
@@ -45,8 +45,8 @@ body{
 
 .menu-btn{
   display: inline-block;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   background-color: #000;
   border-radius: 50%;
   right: 0px;
@@ -55,28 +55,28 @@ body{
   position: relative;
 }
 .menu-btn span{
-    width: 37px;
-    height: 4px;
+    width: 53px;
+    height: 5px;
     position: absolute;
     top: 47%;
-    right: 27%;
+    right: 23%;
     margin-right: -1px;
     background-color: #fff;
 }
 .menu-btn span::before,
 .menu-btn span::after{
   content: '';
-  width: 37px;
-  height: 4px;
+  width: 53px;
+  height: 5px;
   background-color: #fff;
   position: absolute;
   transition: 0.5s;
 }
 .menu-btn span::before{
-  transform: translateY(-12px);
+  transform: translateY(-15px);
 }
 .menu-btn span::after{
-  transform: translateY(12px);
+  transform: translateY(15px);
 }
 .menu-btn-active span:before{
   transform: rotate(45deg);
