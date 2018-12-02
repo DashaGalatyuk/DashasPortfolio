@@ -1,0 +1,355 @@
+@font-face {
+  font-family: PermanentMarker;
+  src: url(../fonts/PermanentMarker-Regular.ttf);
+}
+@font-face {
+  font-family: Righteous;
+  src: url(../fonts/Righteous-Regular.ttf);
+}
+@font-face {
+  font-family: SedgwickAve;
+  src: url(../fonts/SedgwickAve-Regular.ttf);
+}
+*{
+  margin: 0 auto;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+body{
+  background-image: url(../background100%.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.logo{
+  font-size:35px;
+  font-family:'PermanentMarker', sans-serif;
+  margin-left: 70px;
+  color: #000;
+}
+
+.navigation{
+  height: 100px;
+  background-color:rgb(100%, 100%, 100%, .4);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+/*---------BUTTONS-------------*/
+
+
+.menu-btn{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-color: #000;
+  border-radius: 50%;
+  right: 0px;
+  margin-right: 40px;
+  margin-top: 12px;
+  position: relative;
+}
+.menu-btn span{
+    width: 37px;
+    height: 4px;
+    position: absolute;
+    top: 47%;
+    right: 27%;
+    margin-right: -1px;
+    background-color: #fff;
+}
+.menu-btn span::before,
+.menu-btn span::after{
+  content: '';
+  width: 37px;
+  height: 4px;
+  background-color: #fff;
+  position: absolute;
+  transition: 0.5s;
+}
+.menu-btn span::before{
+  transform: translateY(-12px);
+}
+.menu-btn span::after{
+  transform: translateY(12px);
+}
+.menu-btn-active span:before{
+  transform: rotate(45deg);
+}
+.menu-btn-active span:after{
+  transform: rotate(-45deg);
+}
+.menu-btn-active span{
+  height: 0;
+}
+/*------SECOND-------*/
+
+.seeMore_btn{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  z-index: 3;
+  top:-138px;
+  right: -527px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background-color:rgb(61%, 11%, 44%, .4);
+}
+.seeMore_btn span{
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 45%;
+    right: 45%;
+    margin-right: -2px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.seeMore_btn span::before,
+.seeMore_btn span::after{
+  content: '';
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  transition: 0.5s;
+}
+.seeMore_btn span::before{
+  transform: translateX(-18px);
+}
+.seeMore_btn span::after{
+  transform: translateX(18px);
+}
+.seeMore_btn_active span{
+  height: 0;
+}
+.seeMore_btn_active span:before{
+  transform: translate(3px,8px) rotate(-35deg);
+  width: 28px;
+  height: 4px;
+  border-radius: 0%;
+}
+.seeMore_btn_active span:after{
+  transform: translate(-18px,8px) rotate(35deg) ;
+  width: 27px;
+  height: 4px;
+  border-radius: 0%;
+}
+
+
+
+/*--------END-----------------*/
+
+/*----------Predpokaz--------------*/
+
+.predpokaz{
+  font-size:38px;
+  font-family:'PermanentMarker', sans-serif;
+  text-align: center;
+  color: #000;
+}
+
+/*END*/
+
+.menu-nav_child{
+  position: relative;
+  z-index: 2;
+}
+.menu-nav_child:nth-child(2){
+  height: 180px;
+  width: 617px;
+}
+
+.grid-container_child{
+  width: 280px;
+  height: 120px;
+  border: 2px solid rgb(61%, 11%, 44%);
+  padding: 20px 0px 20px;
+}
+.grid-container_child:nth-child(1) {
+  background-image: url(../img/9.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.grid-container_child:nth-child(2) {
+  background-image: url(../img/7.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.grid-container_child:nth-child(3) {
+  background-image: url(../img/8.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.grid-container_child:nth-child(4) {
+  background-image: url(../img/10.jpeg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.hide{
+  display: none;
+}
+
+.menu-nav{
+  display: flex;
+  flex-direction: column;
+  transition: 1s;
+}
+.menu-nav__link{
+  width: 600px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  font-family:'PermanentMarker', sans-serif;
+  font-size: 60px;
+  text-align: center;
+  margin: 30px 0px 40px;
+  border: 2px solid #fff;
+  background-color:rgb(61%, 11%, 44%, .4);
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+}
+.menu-nav__link:nth-child(2):focus{
+  background-color: #2AB22E;
+}
+
+.menu-nav__link:nth-child(3){
+  margin-top: 0px;
+  right: 100px;
+}
+
+.grid-container{
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  width: 605px;
+}
+
+.standart{
+  min-height: 1740px;
+  border: 4px solid #fff;
+  text-align: center;
+}
+/* ----------------HOME--------------- */
+.home_section{
+  background-color: rgb(178, 42, 178, 0.3);
+}
+.home-block{
+  text-align: center;
+  padding: 680px 0px 600px;
+}
+
+.home-block h2{
+  font-family: 'Righteous', sans-serif;
+  color: #fff;
+  font-size: 80px;
+  letter-spacing:25px;
+  margin-bottom: 30px;
+}
+
+.phrase{
+  font-family: 'SedgwickAve', sans-serif;
+  color: #fff;
+  font-size: 25px;
+}
+h2{
+  font-family: 'Righteous', sans-serif;
+  font-size: 65px;
+  margin-bottom: 30px;
+}
+/*---------------- END HOME ------------------*/
+/* ----------------portfolio--------------- */
+.portfolio_section{
+  padding-top:100px;
+  background-color: rgb(42, 178, 46, 0.3);
+}
+.portfolio-name{
+  font-size: 77px;
+  letter-spacing: 10px;
+}
+.sites{
+  width: 500px;
+  height: 265px;
+  object-fit: cover;
+  margin:40px;
+  border: 16px solid #000;
+}
+p{
+  font-family: 'PermanentMarker', sans-serif;
+  font-size: 15px;
+  margin-bottom: 50px;
+}
+
+/*---------------- END PORTFOLIO ------------------*/
+/* ----------------JS developer--------------- */
+.js-work{
+  width: 500px;
+  height: 265px;
+  object-fit: cover;
+  border: 16px solid #000;
+}
+.js-article{
+  display: inline-block;
+  width: 550px;
+  margin: 30px;
+}
+.js-article p{
+  font-size: 30px;
+}
+h3{
+  font-family: 'Righteous', sans-serif;
+  color: #fff;
+  font-size: 50px;
+  margin:20px 0px 20px;
+}
+
+/*---------------- END JS developer ------------------*/
+/* ----------------Grafic--------------- */
+.paint{
+  width: 290px;
+  height: 480px;
+  object-fit: cover;
+  margin: 20px;
+}
+
+
+/*---------------- END GRAFIC ------------------*/
+/*---------------- PHOTOES ------------------*/
+.photos{
+  width: 250px;
+  height: 450px;
+  object-fit: cover;
+  margin: 20px;
+  border: 10px solid #fff;
+}
+.photographer{
+  width: 700px;
+  margin-bottom: 40px;
+}
+/*-------------------ABOUT ME------------------*/
+.about_me{
+  background-color: rgb(42, 119, 178, 0.3);
+}
+.me{
+  width: 600px;
+}
+.about_me h2{
+  margin-top: 50px;
+}
+.about_me h3{
+  font-size: 25px;
+}
+.about-me-p{
+  width: 690px;
+  font-size: 18px;
+}
