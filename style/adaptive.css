@@ -8,4 +8,7 @@
     .nav{
       display: flex;
     }
+    .grid-container{
+      display: none;
+    }
    }
