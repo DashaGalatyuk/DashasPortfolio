@@ -346,13 +346,14 @@ h3{
   background-color: rgba(42, 119, 178, 0.3);
 }
 .me{
-  width: 300px;
+  width: 255px;
 }
 .about_me h2{
   margin-top: 50px;
 }
 .about_me h3{
   font-size: 25px;
+  margin-bottom: 0px;
 }
 .about-me-p{
   width: 300px;
