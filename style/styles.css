@@ -298,24 +298,25 @@ h2{
   height: 165px;
   object-fit: cover;
   margin:40px 10px 40px;
-  border: 16px solid #000;
+  border: 10px solid #000;
 }
 p{
   font-family: 'PermanentMarker', sans-serif;
   font-size: 20px;
-  margin-bottom: 50px;
 }
 .site_develop h2{
   margin-bottom: 0px;
 }
-
+.site_develop p{
+  margin-bottom: 50px;
+}
 /*---------------- END PORTFOLIO ------------------*/
 /* ----------------JS developer--------------- */
 .js-work{
   width: 270px;
   height: 165px;
   object-fit: cover;
-  border: 16px solid #000;
+  border: 10px solid #000;
 }
 .js-article{
   display: inline-block;
