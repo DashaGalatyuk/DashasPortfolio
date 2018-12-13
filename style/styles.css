@@ -238,6 +238,7 @@ body{
 
 .standart{
   min-height: 140px;
+  min-width: 200px;
   border: 4px solid #fff;
   text-align: center;
 }
