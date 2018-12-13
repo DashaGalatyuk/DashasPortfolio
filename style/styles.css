@@ -281,7 +281,7 @@ body{
 h2{
   font-family: 'Righteous', sans-serif;
   font-size: 40px;
-  margin-bottom: 30px;
+  margin: 30px 0px 20px;
 }
 /*---------------- END HOME ------------------*/
 /* ----------------portfolio--------------- */
@@ -362,8 +362,7 @@ h3{
 .me{
   width: 245px;
 }
-.about_me h2{
-  margin-top: 50px;
+.no-top{
   margin-top: 0px;
 }
 .about_me h3{
