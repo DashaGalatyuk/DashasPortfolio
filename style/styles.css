@@ -17,6 +17,9 @@ a{
   text-decoration: none;
   cursor: pointer;
 }
+li{
+  list-style-type: none;
+}
 body{
   background-image: url(../img/background100.png);
   background-position: center center;
@@ -57,7 +60,7 @@ body{
   position: relative;
 }
 .menu-btn span{
-    width: 33px;
+    width: 30px;
     height: 3px;
     position: absolute;
     top: 47%;
@@ -68,23 +71,31 @@ body{
 .menu-btn span::before,
 .menu-btn span::after{
   content: '';
-  width: 33px;
+  width: 30px;
   height: 3px;
   background-color: #fff;
   position: absolute;
   transition: 0.5s;
 }
 .menu-btn span::before{
-  transform: translateY(-10px);
+  transform: translateY(-9px);
 }
 .menu-btn span::after{
-  transform: translateY(10px);
+  transform: translateY(9px);
 }
 .menu-btn-active span:before{
+  top: -10px;
+  right: 12px;
   transform: rotate(45deg);
+  height: 25px;
+  width: 8px;
 }
 .menu-btn-active span:after{
+  top: -10px;
+  right: 12px;
   transform: rotate(-45deg);
+  height: 25px;
+  width: 8px;
 }
 .menu-btn-active span{
   height: 0;
@@ -134,14 +145,14 @@ body{
   height: 0;
 }
 .seeMore_btn_active span:before{
-  transform: translate(2px,6px) rotate(-35deg);
-  width: 24px;
+  transform: translate(0px,6px) rotate(-35deg);
+  width: 20px;
   height: 4px;
   border-radius: 0%;
 }
 .seeMore_btn_active span:after{
-  transform: translate(-16px,6px) rotate(35deg) ;
-  width: 24px;
+  transform: translate(-14px,6px) rotate(35deg) ;
+  width: 20px;
   height: 4px;
   border-radius: 0%;
 }
@@ -357,4 +368,30 @@ h3{
 .about-me-p{
   width: 300px;
   font-size: 17px;
+  margin-bottom: 25px;
+}
+.cv{
+  width: 300px;
+  margin-bottom: 50px;
+}
+/*---------------FOOTER----------------------*/
+footer{
+  border: 4px solid #fff;
+  padding: 10px 0px 10px;
+}
+.text-affinity{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.social-list{
+  display: flex;
+  padding: 0px;
+  margin: 10px;
+}
+.icon{
+  height: 20px;
+  margin-right: 13px;
+}
+.google-icon{
+  height: 25px;
 }
