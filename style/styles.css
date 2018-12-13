@@ -165,9 +165,7 @@ body{
   position: relative;
   z-index: 2;
 }
-.menu-nav_child:nth-child(2){
 
-}
 
 .grid-container_child{
   width: 280px;
@@ -346,10 +344,11 @@ h3{
   background-color: rgba(42, 119, 178, 0.3);
 }
 .me{
-  width: 255px;
+  width: 245px;
 }
 .about_me h2{
   margin-top: 50px;
+  margin-top: 0px;
 }
 .about_me h3{
   font-size: 25px;
@@ -357,5 +356,5 @@ h3{
 }
 .about-me-p{
   width: 300px;
-  font-size: 18px;
+  font-size: 17px;
 }
