@@ -347,8 +347,8 @@ h3{
 /*---------------- END GRAFIC ------------------*/
 /*---------------- PHOTOES ------------------*/
 .photos{
-  width: 140px;
-  height: 250px;
+  width: 120px;
+  height: 220px;
   object-fit: cover;
   margin: 12px;
   border: 5px solid #fff;
