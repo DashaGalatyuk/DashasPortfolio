@@ -1,11 +1,62 @@
 @media only screen and (min-width: 601px) {
+    h2{
+      font-size: 55px;
+    }
+    p{
+      font-size: 32px;
+    }
     .menu-btn{
       display: none;
     }
     .nav{
       display: flex;
     }
+    .home-block{
+      padding: 190px 0px 190px;
+    }
+
     .grid-container{
       display: none;
     }
+    /*AAAAAABBBOOOUUUTTT MMMEEEE*/
+    .me{
+      display:inline-block;
+      width: 200px;
+      height: 220px;
+      background-image: url(../img/HUGKILLER.png);
+      border:5px solid #fff;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: 10px;
+    }
+    .wrap-info-me{
+      width: 360px;
+      height: 250px;
+      display: inline-block;
+    }
+    .about_me h3{
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    .about-me-p{
+      font-size: 20px;
+      width: 100%;
+    }
+
+    .cv{
+      width: 500px;
+    }
+
+    .icon{
+      height: 30px;
+    }
+    .google-icon{
+      height: 42px;
+    }
    }
+
+@media only screen and (max-width: 720px){
+  .photographer{
+      width: 400px;
+  }
+}
