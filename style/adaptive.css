@@ -5,16 +5,29 @@
     p{
       font-size: 32px;
     }
+    .glowna_navigation{
+      display: none;
+    }
     .menu-btn{
       display: none;
     }
     .nav{
       display: flex;
+      margin-right: 18px;
     }
     .home-block{
       padding: 190px 0px 190px;
     }
-
+    .nav a:hover,
+    .nav a:focus{
+	     color:#ca0fcc;
+       font-size:25px;
+       transition:1s;
+       padding-top: 20px;
+     }
+     .grafic-designer{
+       width: 520px;
+     }
     .grid-container{
       display: none;
     }
@@ -53,10 +66,116 @@
     .google-icon{
       height: 42px;
     }
+    .social-list{
+      width: 300px;
+      margin: 0 auto;
+    }
    }
 
 @media only screen and (max-width: 720px){
   .photographer{
       width: 360px;
   }
+}
+@media only screen and (min-width: 861px){
+  .nav a{
+    font-size: 23px;
+  }
+  .nav{
+    margin-right: 65px;
+  }
+  .nav a:not(:last-child){
+	margin-right: 40px;
+  }
+  .nav a:hover,
+  .nav a:focus{
+     color:#ca0fcc;
+     font-size:27px;
+     transition:1s;
+     padding-top: 22px;
+   }
+}
+@media only screen and (min-width: 1200px){
+  .navigation{
+    height: 100px;
+  }
+  .logo{
+    font-size:27px;
+    margin-left: 40px;
+  }
+  .nav a{
+    font-size: 28px;
+    padding: 28px 0px 30px;
+  }
+  .nav a:not(:last-child){
+	margin-right: 50px;
+  }
+  .nav a:hover,
+  .nav a:focus{
+     color:#ca0fcc;
+     font-size:35px;
+     transition:1s;
+     padding-top: 22px;
+   }
+   .standart{
+      min-height: 650px;
+   }
+   .home-block h2{
+     color: #fff;
+     font-size: 80px;
+     letter-spacing:30px;
+     margin-bottom: 35px;
+   }
+   .phrase{
+     font-size: 35px;
+   }
+   .portfolio-name{
+     font-size: 60px;
+     letter-spacing: 25px;
+   }
+
+   .grafic-designer{
+     width:1000px;
+   }
+   .paint{
+     width: 200px;
+     height: 340px;
+   }
+   h2{
+     font-size: 60px;
+     margin: 50px 0px 30px;
+   }
+   .photos{
+     width: 190px;
+     height: 340px;
+   }
+
+   .me{
+     width: 300px;
+     height: 300px;
+   }
+   .wrap-info-me h2{
+     font-size: 75px;
+   }
+   .about-me-p{
+     font-size: 25px;
+   }
+   .wrap-info-me{
+     width: 460px;
+     height: 325px;
+   }
+   .about_me h3{
+     font-size: 50px;
+     margin: 40px 0px 40px;
+   }
+   .cv{
+     width: 700px;
+   }
+   .no-top{
+     margin-top:30px;
+   }
+   .social-list{
+     width: 500px;
+     margin: 0 auto;
+   }
 }
