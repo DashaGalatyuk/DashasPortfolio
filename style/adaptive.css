@@ -5,6 +5,10 @@
     p{
       font-size: 32px;
     }
+    .portfolio-name{
+      font-size: 50px;
+      letter-spacing: 29px;
+    }
     .glowna_navigation{
       display: none;
     }
